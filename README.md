@@ -35,7 +35,7 @@ The straightforward approach is to do:
 
     // This will start a new thread, create a `MockAPI` object in it,
     // and return a handle that allows communicating with it.
-    scope API test = RemoteAPI!API.spawn!MockAPI();
+    scope /*API*/ test = RemoteAPI!API.spawn!MockAPI();
     // Note that the handle will be of type `RemoteAPI!API`, which implements `API`
     // This is so one can have an array of `API`, but different underlying implementations.
 
